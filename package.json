@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\"",
         "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook -o docs"
+        "build-storybook": "build-storybook -s public"
     },
     "keywords": [],
     "author": "Thomas MacLean <hello@thomasmaclean.be> (https://thomasmaclean.be)",
