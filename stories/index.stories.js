@@ -23,4 +23,9 @@ storiesOf('Button', module)
         </Button>
     ));
 
-storiesOf('Leaflet', module).add('basic map', () => <Leaflet name="thomas" />);
+storiesOf('Leaflet', module).add('basic map', () => (
+    <Leaflet
+        markerPosition={{ lat: 51.062935, lon: 3.6823739 }}
+        name="thomas"
+    />
+));

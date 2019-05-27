@@ -3,6 +3,12 @@ import L from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
 
+
+const style = {
+    width: "100%",
+    height: "300px"
+  };
+
 class Map extends React.Component {
     componentDidMount() {
         // create map
@@ -17,11 +23,18 @@ class Map extends React.Component {
             ]
         });
 
-        //this.marker = L.marker(this.props.markerPosition).addTo(this.map);
+        this.marker = L.marker(this.props.markerPosition).addTo(this.map);
+    }
+
+    componentDidUpdate({ markerPosition }) {
+        // check if position has changed
+        if (this.props.markerPosition !== markerPosition) {
+            this.marker.setLatLng(this.props.markerPosition);
+        }
     }
 
     render() {
-        return <div style={{ height: '250px' }} id="map" />;
+        return <div style={style} id="map" />;
     }
 }
 
