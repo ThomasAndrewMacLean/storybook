@@ -11,7 +11,7 @@ deploy:
   provider: pages # Tell Travis we want to deploy to Github Pages
   skip-cleanup: true 
   github-token: $GITHUB_TOKEN # Will take the environment variable you created on step 5
-  local_dir: docs # The folder that needs to be deployed
+  local_dir: storybook-static # The folder that needs to be deployed
   repo: ThomasAndrewMacLean/storybook # Add your username/project_name here
   target_branch: gh-pages # Tell Travis to deploy on the gh-pages branch
   on:
