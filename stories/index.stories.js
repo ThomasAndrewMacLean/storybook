@@ -7,6 +7,7 @@ import { linkTo } from '@storybook/addon-links';
 import { Button, Welcome } from '@storybook/react/demo';
 import Leaflet from '../src/leaflet/Leaflet';
 import Countdown from '../src/countdown/countdown';
+import SubscribeForm from '../src/subscribeForm/subscribe';
 
 storiesOf('Welcome', module).add('to Storybook', () => (
     <Welcome showApp={linkTo('Button')} />
@@ -37,3 +38,5 @@ storiesOf('Countdown', module).add('Countdown', () => (
         timeFormat="MM DD YYYY, h:mm a"
     />
 ));
+
+storiesOf('Subscribe', module).add('Subscribe', () => <SubscribeForm />);
