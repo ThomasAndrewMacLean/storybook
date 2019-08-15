@@ -9,3 +9,8 @@ https://dev.to/christopherkade/automatically-deploying-your-storybook-to-github-
 https://cherniavskii.com/using-leaflet-in-react-apps/
 
 https://leafletjs.com/examples/quick-start/
+
+
+## Signup 
+
+- https://help.emailoctopus.com/article/68-setting-up-dmarc-spf-dkim
