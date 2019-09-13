@@ -23,9 +23,9 @@ class Map extends React.Component {
                 })
             ]
         });
-    this.map.touchZoom.disable();
-    this.map.doubleClickZoom.disable();
-    this.map.scrollWheelZoom.disable();
+  //  this.map.touchZoom.disable();
+   // this.map.doubleClickZoom.disable();
+    //this.map.scrollWheelZoom.disable();
         var marker = new L.marker([67.5015, 18.1539], { opacity: 0.01 }); //opacity may be set to zero
 marker.bindTooltip("Smakelijk en slaapwel vervelede muggen :-D", {permanent: true, className: "my-label", offset: [0, 0] });
 marker.addTo(this.map);
