@@ -13,8 +13,8 @@ class Map extends React.Component {
     componentDidMount() {
         // create map
         this.map = L.map('map', {
-            center: [51.062935, 3.6823739],
-            zoom: 13,
+            center: [67, 18],
+            zoom: 5,
             layers: [
                 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                     attribution:
@@ -23,7 +23,10 @@ class Map extends React.Component {
             ]
         });
 
-        this.marker = L.marker(this.props.markerPosition).addTo(this.map);
+        var marker = new L.marker([67.5015, 18.1539], { opacity: 0.01 }); //opacity may be set to zero
+marker.bindTooltip("Smakelijk en slaapwel vervelede muggen :-D", {permanent: true, className: "my-label", offset: [0, 0] });
+marker.addTo(this.map);
+       // this.marker = L.marker(this.props.markerPosition).addTo(this.map);
     }
 
     componentDidUpdate({ markerPosition }) {
