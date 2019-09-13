@@ -32,7 +32,7 @@ marker.addTo(this.map);
     componentDidUpdate({ markerPosition }) {
         // check if position has changed
         if (this.props.markerPosition !== markerPosition) {
-            this.marker.setLatLng(this.props.markerPosition);
+//            this.marker.setLatLng(this.props.markerPosition);
         }
     }
 
