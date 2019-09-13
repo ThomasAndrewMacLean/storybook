@@ -6,7 +6,7 @@ import './style.css';
 
 const style = {
     width: "100%",
-    height: "300px"
+    height: "100%"
   };
 
 class Map extends React.Component {
@@ -15,6 +15,7 @@ class Map extends React.Component {
         this.map = L.map('map', {
             center: [67, 18],
             zoom: 5,
+            zoomControl: false ,
             layers: [
                 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                     attribution:
