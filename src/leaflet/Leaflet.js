@@ -15,7 +15,7 @@ class Map extends React.Component {
         this.map = L.map('map', {
             center: [67, 18],
             zoom: 5,
-            zoomControl: false ,
+           // zoomControl: false ,
             layers: [
                 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                     attribution:
